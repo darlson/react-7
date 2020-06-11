@@ -1,4 +1,6 @@
 import React from 'react'
+import styleHoc from './styleHoc'
+import authHoc from './authHoc'
 
 const Square = props => {
   return (
@@ -7,4 +9,4 @@ const Square = props => {
     </div>
   )
 }
-export default Square
+export default authHoc(styleHoc(Square))
